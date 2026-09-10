@@ -1,0 +1,33 @@
+from setuptools import find_packages, setup
+from typing import List
+
+HYPEN_E_DOT='-e .'
+
+def get_requirements(file_path:str)->List[str]:
+    '''
+    this function will return the List of requirements
+    '''
+    
+    requirements=[]
+    with open(file_path) as file_obj:
+        requirements=file_obj.readlines()
+        requirements=[req.replace("\n","") for req in requirements]
+        
+        if HYPEN_E_DOT in requirements:
+            requirements.remove(HYPEN_E_DOT)
+            
+    return requirements
+setup(
+    name='AI-Powered Credit Scoring using alternative data',
+    version="1.0.0",
+    author='Josh',
+    author_email=
+    packages=find_packages(),
+    python_requires=">=3.10, <3.13",
+    install_requires=[
+        
+        
+        
+    ],
+    extras_require={"dev": ["pytest>=8.0.0", "black>=24.3.0"]},
+)

@@ -1,0 +1,21 @@
+uvicorn
+pydantic
+
+
+
+
+
+ #uvicorn
+ #pydantic
+ #pydantic-settings
+ python-dotenv
+ #loguru
+ pandas
+ numpy
+ scikit-learn
+ xgboost
+ shap
+ #pymongo
+ #python-jose[cryptography]
+ #passlib[bcrypt]
+ -e .

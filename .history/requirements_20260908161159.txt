@@ -1,0 +1,23 @@
+uvicorn
+pydantic
+pydantic-settings
+loguru
+pandas
+numpy
+scikit-learn
+xgboost
+shap
+pymongo
+python-dotenv
+python-jose
+passlib
+-e .
+
+
+
+
+ #uvicorn
+ #pydantic
+ #pydantic-settings
+ python-dotenv
+ #
